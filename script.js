@@ -66,6 +66,10 @@ function renderCart() {
   cartProducts.innerHTML = "";
   let totalProducts = 0;
 
+  if (cart.length < 1) {
+    cartProducts.innerHTML = "No products in the cart";
+  }
+
   cart.forEach((item) => {
     totalProducts += item.price * item.quantity;
     const cartItem = document.createElement("div");
