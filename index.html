@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online store</title>
+    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="all">All</button>
+        <button id="beauty">Beauty</button>
+        <button id="fragrances">Fragrances</button>
+        <button id="groceries">Groceries</button>
+        <button id="furniture">furniture</button>
+      </nav>
+
+      <input type="text" id="search" placeholder="Search for Products" />
+    </header>
+
+    <main>
+      <section id="products">
+        <span class="noProducts">No products</span>
+      </section>
+
+      <section class="cart-info">
+        <h2>Shopping Cart</h2>
+
+        <div id="cart">No products in the cart</div>
+
+        <div><strong>Total:</strong> <span id="total">0</span></div>
+      </section>
+    </main>
+  </body>
+</html>
